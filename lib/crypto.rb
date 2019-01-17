@@ -30,5 +30,5 @@ puts page.class   # => Nokogiri::HTML::Document
     return crypto_scrap
 end
 
-   
+p array_crypto
 
