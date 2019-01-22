@@ -1,15 +1,19 @@
-require_relative '../lib/mairie.rb'
+#spec cityhalls
 
-describe "mairie method" do
-    it "should return an array of email that is not nil" do
-      expect(url).not_to be_nil
+describe "the cityhallo_scrapper method" do
+    it "should return an array" do
+      expect(cityhall_scrapper).to be_an_instance_of(Array)
     end
-
-    it "mairie method" do
-        expect(cities).not_to be_nil
+    it "should return a not empty array" do
+      expect(cityhall_scrapper).not_to be_empty
     end
-
- #   it "mairie method" do
- #       expect(scrape).not_to be_nil
- #   end
-end
+  
+    it "should return the first city" do
+      A=cityhall_scrapper()
+      expect(A[0].keys[0]).to eq("ABLEIGES")
+    end
+    it "should return mairie.ableiges95@wanadoo.fr" do
+      A=cityhall_scrapper()
+      expect(A[0].values_at("ABLEIGES")[0]).to eq("mairie.ableiges95@wanadoo.fr")
+    end
+  end
