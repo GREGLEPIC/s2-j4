@@ -3,7 +3,7 @@
 # RUBY - Obscur Trader
 #****************************************************************************
 #   Ruby's Program - obscur_trader
-#   Written by: Guillaume CHRISTE
+#   Written by: Greg Rouxel Oldrà
 # 	Date: 17-Jan-
 #   
 #   Description:
